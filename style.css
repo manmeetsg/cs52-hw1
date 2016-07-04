@@ -4,16 +4,17 @@
  * CS 52, HW 1
  */
 
- /* Remove the margin and padding */
+ /* Remove the margin and padding and add a background image */
 body {
   margin: 0;
   padding: 0;
   background-image: url("./background_image.jpg");
   background-size: cover;
 }
+/* Define our flex objects */
+.flex-container {
 
-/* Add a background image */
-.cover {
-  background-image: url("./background_image.jpg");
-  background-size: cover;
+}
+.flex-item {
+
 }
