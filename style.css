@@ -8,6 +8,8 @@
 body {
   margin: 0;
   padding: 0;
+  background-image: url("./background_image.jpg");
+  background-size: cover;
 }
 
 /* Add a background image */
