@@ -13,7 +13,9 @@ body {
 }
 /* Define our flex objects */
 .flex-container {
-
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .flex-item {
 
