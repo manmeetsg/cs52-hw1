@@ -12,6 +12,6 @@ body {
 
 /* Add a background image */
 .cover {
-  background-image: url(background_image.jpg);
+  background-image: background_image.jpg;
   background-size: cover;
 }
