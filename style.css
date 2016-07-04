@@ -44,6 +44,11 @@ ul#navbar li {
   display: inline;
 }
 
+ul#navbar li a {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
 ul#navbar li a:hover {
 }
 
@@ -51,11 +56,14 @@ ul#navbar li a:hover {
 .body-container {
   display: flex;
   flex-direction: column;
-  position: absolute;
   justify-content: center;
 }
 
 /* footer css */
 ul#footer {
   list-style: none;
+}
+
+ul#footer li {
+  
 }
