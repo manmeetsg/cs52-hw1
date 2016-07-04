@@ -1,0 +1,17 @@
+/*
+ * style.css
+ * Manmeet Gujral
+ * CS 52, HW 1
+ */
+
+ /* Remove the margin and padding */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Add a background image */
+.cover {
+  background-image: url(background_image.jpg);
+  background-size: cover;
+}
