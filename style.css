@@ -4,7 +4,12 @@
  * CS 52, HW 1
  */
 
- /* Remove the margin and padding and add a background image */
+html {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+ /*  */
 body {
   margin: 0;
   padding: 0;
@@ -22,10 +27,13 @@ body {
 
 }
 
-/* Specific flex box for the nav bar */
+/* Specific flex box for the nav bar and its relevant code*/
 .nav-container {
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 ul#navbar {
@@ -42,4 +50,9 @@ ul#navbar li a {
 }
 
 ul#navbar li a:hover {
+}
+
+.body-container {
+  display: flex;
+  flex-direction: column;
 }
