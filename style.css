@@ -10,7 +10,7 @@ body {
   padding: 0;
   background-image: url("./background_image.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
 }
 /* Define our flex objects */
 .flex-container {
@@ -28,7 +28,7 @@ body {
   flex-flow: row wrap;
 }
 
-#navbar ul {
+ul#navbar {
   list-style: none;
   display: inline;
 }
