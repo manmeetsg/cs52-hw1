@@ -16,10 +16,9 @@
       <nav>
         <!-- Have to define a list without bullets in the style sheet -->
         <ul id="navbar">
-          <li id="navbar"><a id="navbar" href="#">Home</a></li>
-          <li><a href="#">Product</a></li>
-          <li><a href="#">Pricing</a></li>
-          <li><a href="#">Support</a></li>
+          <li><a id="expend" href="#">Product</a></li>
+          <li><a id="expend" href="#">Pricing</a></li>
+          <li><a id="expend" href="#">Support</a></li>
           <li><a href="#">Sign In</a></li>
         </ul>
       </nav>
@@ -28,18 +27,28 @@
   <body>
     <!-- Add a heading to the top of the page and some subscript -->
     <div class="body-container">
-      <h1> CS52 Landing Page </h1>
-      <p> Lets make a web page! </p>
+      <h1>
+        <div style="text-align: center">
+          CS52 Landing Page
+        </div>
+      </h1>
+      <p>
+        <div style="text-align: center">
+          Lets make a web page!
+        </div>
+      </p>
       <!-- Create an input box and submit button -->
       <div>
         <div class="color-box">
           <input class="input-box" type="text" name="emailaddress" placeholder="Email Address"></input>
           <button class="button"> <a href="#">Create Account</a> </button>
-          <p style="padding:5px 0px 0px 60px" text-align="center"> <a href="#"> Already have an account? Sign in here! </a></p>
+          <p>
+            <div style="text-align: center">
+              <a href="#"> Already have an account? Sign in! </a>
+            </div>
+          </p>
         </div>
       </div>
-
-
     </div>
   </body>
   <!-- Four unordered lists in the footer and some social media stuff -->
@@ -81,20 +90,42 @@
         <li><a id="fade" href="#"> Item 5 </a></li>
       </ul>
     </div>
-  <div class="nav-container">
+
+  <div class="bottom-box">
+    <h3> Link Heading </h3>
+    <h3> + </h3>
+  </div>
+  <div class="bottom-box">
+    <h3> Link Heading </h3>
+    <h3> + </h3>
+  </div>
+  <div class="bottom-box">
+    <h3> Link Heading </h3>
+    <h3> + </h3>
+  </div>
+  <div class="bottom-box">
+    <h3> Link Heading </h3>
+    <h3> + </h3>
+  </div>
+  <div class="bottom-box">
+    <h3> Link Heading </h3>
+    <h3> + </h3>
+  </div>
+
+  <div class="bottom-container">
     <h3> >_CS52 </h3>
-    <ul id="navbar">
-      <li> <a href="#"> Contact </a></li>
-      <li>
+    <ul id="footer">
+      <li id="nav"> <a href="#"> Contact </a></li>
+      <li id="nav">
         <a href="#">
           <i class="fa fa-facebook-official" aria-hidden="true"></i>
         </a>
       </li>
-      <li>
+      <li id="nav">
         <a href="#">
           <i class="fa fa-twitter-square" aria-hidden="true"></i>
         </a>
       </li>
     </ul>
   </div>
-  </footer>
+</footer>

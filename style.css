@@ -50,6 +50,7 @@ body {
   justify-content: space-between;
   padding-left: 10px;
   padding-right: 10px;
+  align-self: flex-start;
 }
 
 ul#navbar {
@@ -62,12 +63,18 @@ ul#navbar li {
 }
 
 ul#navbar li a {
+    border: 2px solid #d0d0d0;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul#navbar li a#expend {
     border: 2px solid transparent;
     color: white;
     font-family: 'Roboto', sans-serif;
 }
 
-ul#navbar li a:hover {
+ul#navbar li a#expend:hover {
   border: 2px solid #d0d0d0;
 }
 
@@ -112,8 +119,88 @@ ul#navbar li a:hover {
   padding-top: 45px;
   padding-bottom: 5px;
 }
-
+/* Specific flex box for the nav bar and its relevant code*/
+.bottom-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+  align-self: baseline;
+}
 /* footer css */
 ul#footer {
   list-style: none;
+}
+
+ul#footer li#nav {
+  display: inline;
+  padding: 9px;
+}
+
+ul#footer li#nav a {
+    border: 2px transparent;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.bottom-box {
+  display: none;
+}
+
+
+/* Media Query Section of the code */
+@media only screen and (max-width: 640px) {
+  /* Redefine our flex objects */
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+    padding-right: 40px;
+  }
+
+  .input-box {
+    display: block;
+    margin: 0 auto;
+    align-self: center;
+  }
+
+  .button {
+    display: block;
+    margin: 10px auto auto auto;
+    align-self: center;
+  }
+
+  .color-box {
+    height: 160px;
+    /*align-self: center;*/
+    justify-content: center;
+
+  }
+
+  ul#navbar li a#expend {
+      display: none;
+  }
+
+  p {
+    margin: auto;
+    padding: 30px 0px 0px 40px;
+  }
+
+  ul#footer li {
+    display: none;
+  }
+
+  .bottom-box {
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    height: 50px;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 0px 10px 0px 10px;
+    border: 1px solid grey;
+  }
+
 }
