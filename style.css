@@ -7,8 +7,24 @@
 html {
   color: white;
   font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  overflow-x: hidden;
 }
 
+a:link {
+  text-decoration: none;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+a#fade {
+  color: rgba(255, 255, 255, 0.6);
+}
  /*  */
 body {
   margin: 0;
@@ -17,14 +33,14 @@ body {
   background-size: cover;
   background-repeat: repeat-y;
 }
+
 /* Define our flex objects */
 .flex-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
-.flex-item {
-
+  padding-left: 30px;
+  padding-right: 40px;
 }
 
 /* Specific flex box for the nav bar and its relevant code*/
@@ -42,14 +58,17 @@ ul#navbar {
 
 ul#navbar li {
   display: inline;
+  padding: 9px;
 }
 
 ul#navbar li a {
+    border: 2px solid transparent;
     color: white;
     font-family: 'Roboto', sans-serif;
 }
 
 ul#navbar li a:hover {
+  border: 2px solid #d0d0d0;
 }
 
 /* body css */
@@ -57,13 +76,44 @@ ul#navbar li a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 140px;
+}
+/* creating a button inspired by slack's button */
+.button {
+  background-color: #56b68b;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  padding: 12px;
+  vertical-align: middle;
+}
+
+.input-box {
+  font-size: 20pt;
+  border-radius: 4px;
+  padding: 4px;
+  vertical-align: middle;
+  border: none;
+}
+
+.color-box {
+  width: 450px;
+  height: 100px;
+  margin: 5px;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.5);
+  padding-right: 20px;
+  padding-left: 50px;
+  padding-top: 45px;
+  padding-bottom: 5px;
 }
 
 /* footer css */
 ul#footer {
   list-style: none;
-}
-
-ul#footer li {
-  
 }
