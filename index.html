@@ -1,20 +1,21 @@
 <!DOCTYPE html>
+<!-- Manmeet Gujral, HW 1, CS 52: Landing Page -->
 <html>
   <head>
     <!-- Link the style sheet to the html -->
     <link rel="stylesheet" type="text/css" href="style.css">
     <!-- Link the fonts -->
     <link rel="stylesheet" href="./font-awesome-4.6.3/css/font-awesome.min.css">
+    <!-- Title the page -->
     <title> Manmeet's Landing </title>
-
+    <!-- Use a nav container for the nav bar -->
     <div class="nav-container">
-      <!-- Link at top of page -->
+      <!-- Link at top of page in the nav bar -->
       <a href="#">
         <h1> >_CS52 </h1>
       </a>
-
+      <!-- Create a navbar with the main items from the example -->
       <nav>
-        <!-- Have to define a list without bullets in the style sheet -->
         <ul id="navbar">
           <li><a id="expend" href="#">Product</a></li>
           <li><a id="expend" href="#">Pricing</a></li>
@@ -24,8 +25,9 @@
       </nav>
     </div>
   </head>
+  <!-- Start body -->
   <body>
-    <!-- Add a heading to the top of the page and some subscript -->
+    <!-- Create a body container that will hold the text box and button -->
     <div class="body-container">
       <h1>
         <div style="text-align: center">
@@ -37,7 +39,8 @@
           Lets make a web page!
         </div>
       </p>
-      <!-- Create an input box and submit button -->
+      <!-- Create an input box and submit button and place them inside a
+      transluscent box -->
       <div>
         <div class="color-box">
           <input class="input-box" type="text" name="emailaddress" placeholder="Email Address"></input>
@@ -51,9 +54,12 @@
       </div>
     </div>
   </body>
-  <!-- Four unordered lists in the footer and some social media stuff -->
+
+  <!--Add a flex container for the footer to hold our four inline bottom
+  lists -->
   <footer>
     <div class="flex-container">
+      <!-- Define four unordered lists with link headings and faded links -->
       <ul id="footer">
         <li> LINK HEADING </li>
         <li><a id="fade" href="#"> Item 1 </a></li>
@@ -91,41 +97,45 @@
       </ul>
     </div>
 
-  <div class="bottom-box">
-    <h3> Link Heading </h3>
-    <h3> + </h3>
-  </div>
-  <div class="bottom-box">
-    <h3> Link Heading </h3>
-    <h3> + </h3>
-  </div>
-  <div class="bottom-box">
-    <h3> Link Heading </h3>
-    <h3> + </h3>
-  </div>
-  <div class="bottom-box">
-    <h3> Link Heading </h3>
-    <h3> + </h3>
-  </div>
-  <div class="bottom-box">
-    <h3> Link Heading </h3>
-    <h3> + </h3>
-  </div>
+    <!-- Create multiple bottom boxes that will only show in mobile -->
+    <div class="bottom-box">
+      <h3> Link Heading </h3>
+      <h3> + </h3>
+    </div>
+    <div class="bottom-box">
+      <h3> Link Heading </h3>
+      <h3> + </h3>
+    </div>
+    <div class="bottom-box">
+      <h3> Link Heading </h3>
+      <h3> + </h3>
+    </div>
+    <div class="bottom-box">
+      <h3> Link Heading </h3>
+      <h3> + </h3>
+    </div>
+    <div class="bottom-box">
+      <h3> Link Heading </h3>
+      <h3> + </h3>
+    </div>
 
-  <div class="bottom-container">
-    <h3> >_CS52 </h3>
-    <ul id="footer">
-      <li id="nav"> <a href="#"> Contact </a></li>
-      <li id="nav">
-        <a href="#">
-          <i class="fa fa-facebook-official" aria-hidden="true"></i>
-        </a>
-      </li>
-      <li id="nav">
-        <a href="#">
-          <i class="fa fa-twitter-square" aria-hidden="true"></i>
-        </a>
-      </li>
-    </ul>
-  </div>
-</footer>
+    <!-- Create a bottom container for the contact and social media links -->
+    <div class="bottom-container">
+      <h3> >_CS52 </h3>
+      <ul id="footer">
+        <li id="nav"> <a href="#"> Contact </a></li>
+        <li id="nav">
+          <a href="#">
+            <i class="fa fa-facebook-official" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li id="nav">
+          <a href="#">
+            <i class="fa fa-twitter-square" aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</html>
+<!-- end html -->

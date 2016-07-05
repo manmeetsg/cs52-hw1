@@ -4,6 +4,7 @@
  * CS 52, HW 1
  */
 
+/* Set the font for the entire page */
 html {
   color: white;
   font-family: 'Roboto', sans-serif;
@@ -11,21 +12,24 @@ html {
   overflow-x: hidden;
 }
 
+/* Make all links white with same font and no decoration */
 a:link {
   text-decoration: none;
   color: white;
   font-family: 'Roboto', sans-serif;
 }
 
+/* Make all visited links white with same font and no decoration */
 a:visited {
   text-decoration: none;
   color: white;
 }
 
+/* Create an option for some links to be faded, like at the bottom of the screen */
 a#fade {
   color: rgba(255, 255, 255, 0.6);
 }
- /*  */
+ /* Set the background and margins for the body */
 body {
   margin: 0;
   padding: 0;
@@ -34,7 +38,7 @@ body {
   background-repeat: repeat-y;
 }
 
-/* Define our flex objects */
+/* Define a generic inline flex object */
 .flex-container {
   display: flex;
   flex-direction: row;
@@ -53,32 +57,39 @@ body {
   align-self: flex-start;
 }
 
+/* Create a specific unordered list for the navbar */
 ul#navbar {
   list-style: none;
 }
 
+/* Create a specific unordered list item for the navbar */
 ul#navbar li {
   display: inline;
   padding: 9px;
 }
 
+/* Create a specific unordered list item link for the navbar */
 ul#navbar li a {
     border: 2px solid #d0d0d0;
     color: white;
     font-family: 'Roboto', sans-serif;
 }
 
+/* Create a specific unordered list item that WILL NOT
+be there when the screen is small through media query for the navbar */
 ul#navbar li a#expend {
     border: 2px solid transparent;
     color: white;
     font-family: 'Roboto', sans-serif;
 }
 
+/* Ensure the navbar items will have a hover box when hovered over */
 ul#navbar li a#expend:hover {
   border: 2px solid #d0d0d0;
 }
 
-/* body css */
+/* CSS code for the body */
+/* Create a body container to hold our input box and main page text */
 .body-container {
   display: flex;
   flex-direction: column;
@@ -87,7 +98,7 @@ ul#navbar li a#expend:hover {
   padding-top: 100px;
   padding-bottom: 140px;
 }
-/* creating a button inspired by slack's button */
+/* creating a button inspired by slack's button, did not copy code */
 .button {
   background-color: #56b68b;
   text-align: center;
@@ -100,6 +111,7 @@ ul#navbar li a#expend:hover {
   vertical-align: middle;
 }
 
+/* create an input box inspired by slack's, did not copy code */
 .input-box {
   font-size: 20pt;
   border-radius: 4px;
@@ -108,6 +120,7 @@ ul#navbar li a#expend:hover {
   border: none;
 }
 
+/* Create a color box to hold the text input */
 .color-box {
   width: 450px;
   height: 100px;
@@ -119,7 +132,9 @@ ul#navbar li a#expend:hover {
   padding-top: 45px;
   padding-bottom: 5px;
 }
-/* Specific flex box for the nav bar and its relevant code*/
+
+/* footer css */
+/* Specific flex box for the bottom bar and its relevant items*/
 .bottom-container {
   display: flex;
   flex-direction: row;
@@ -128,28 +143,34 @@ ul#navbar li a#expend:hover {
   padding-right: 10px;
   align-self: baseline;
 }
-/* footer css */
+
+/* Specific unordered list for the footer */
 ul#footer {
   list-style: none;
 }
 
+/* Specific unordered list item for the footer bottom bar with the contact info */
 ul#footer li#nav {
   display: inline;
   padding: 9px;
 }
 
+/* Specific unordered list ite links for the footer bottom bar
+ with the contact info */
 ul#footer li#nav a {
     border: 2px transparent;
     color: white;
     font-family: 'Roboto', sans-serif;
 }
 
+/* Do not display the bottom box in the large screen */
 .bottom-box {
   display: none;
 }
 
 
-/* Media Query Section of the code */
+/* Media Query Section of the code to adjust the layout
+for changed screen size*/
 @media only screen and (max-width: 640px) {
   /* Redefine our flex objects */
   .flex-container {
@@ -160,38 +181,47 @@ ul#footer li#nav a {
     padding-right: 40px;
   }
 
+  /* Change the input box into displaying as a bock to put
+  it on top of button */
   .input-box {
     display: block;
     margin: 0 auto;
     align-self: center;
   }
 
+  /* Make the button a block to display below the email text entry and above
+  other elements */
   .button {
     display: block;
     margin: 10px auto auto auto;
-    align-self: center;
+    align-self: center
   }
 
+  /* Change the size of the color box to fit the mobile screen better */
   .color-box {
     height: 160px;
-    /*align-self: center;*/
     justify-content: center;
-
   }
 
+  /* Change the expendable items to not display on the nav bar, so it only says
+  sign in */
   ul#navbar li a#expend {
       display: none;
   }
 
+  /* Ensure that our text in the main entry box appears centered and nice */
   p {
     margin: auto;
     padding: 30px 0px 0px 40px;
   }
 
+  /* Do not display the footer items made on large screen */
   ul#footer li {
     display: none;
   }
 
+  /* Display the bottom boxes to be possible drop down menus, though they are
+  not interactive */
   .bottom-box {
     display: flex;
     justify-content: space-between;
@@ -202,5 +232,4 @@ ul#footer li#nav a {
     padding: 0px 10px 0px 10px;
     border: 1px solid grey;
   }
-
 }
