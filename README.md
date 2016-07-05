@@ -9,19 +9,19 @@ For this assignment, I followed the instructions and began with an html skeleton
 ### Screencaps
 ---
 #### Screenshot 1
-![Alt text](screenshots/1.tiff "Screenshot 1")
+![Alt text](./screenshots/1.tiff "Screenshot 1")
 ---
 #### Screenshot 2
-![Alt text](screenshots/2.tiff "Screenshot 2")
+![Alt text](./screenshots/2.tiff "Screenshot 2")
 ---
 #### Screenshot 3
-![Alt text](screenshots/3.tiff "Screenshot 3")
+![Alt text](./screenshots/3.tiff "Screenshot 3")
 ---
 #### Screenshot 4
-![Alt text](screenshots/4.tiff "Screenshot 4")
+![Alt text](./screenshots/4.tiff "Screenshot 4")
 ---
 #### Screenshot 5
-![Alt text](screenshots/5.tiff "Screenshot 5")
+![Alt text](./screenshots/5.tiff "Screenshot 5")
 
 
 
